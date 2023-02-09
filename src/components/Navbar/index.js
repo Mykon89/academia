@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import { Link } from 'react-scroll';
 import './Navbar.css';
+import { Button } from '../Button';
 
 export default class Navbar extends Component {
   state = { clicked: false };
@@ -38,6 +39,7 @@ export default class Navbar extends Component {
             );
           })}
         </ul>
+        <Button>Login</Button>
       </nav>
     );
   }
