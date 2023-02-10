@@ -3,6 +3,7 @@ import { MenuItems } from './MenuItems';
 import { Link as Href } from 'react-scroll';
 import './Navbar.css';
 import { Button } from '../Button';
+import { Link } from 'react-router-dom';
 
 export default class Navbar extends Component {
   state = { clicked: false };
@@ -39,7 +40,9 @@ export default class Navbar extends Component {
             );
           })}
         </ul>
-        <Button>Login</Button>
+        <Button>
+          <Link to="/login">Login</Link>
+        </Button>
       </nav>
     );
   }
