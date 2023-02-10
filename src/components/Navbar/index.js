@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
-import { Link } from 'react-scroll';
+import { Link as Href } from 'react-scroll';
 import './Navbar.css';
 import { Button } from '../Button';
 
@@ -24,7 +24,7 @@ export default class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link
+                <Href
                   className={item.cName}
                   activeClass="active"
                   to={item.id}
@@ -34,7 +34,7 @@ export default class Navbar extends Component {
                   duration={500}
                 >
                   <p>{item.text}</p>
-                </Link>
+                </Href>
               </li>
             );
           })}
