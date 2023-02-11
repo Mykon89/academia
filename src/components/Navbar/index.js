@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import { Link as Href } from 'react-scroll';
 import './Navbar.css';
-import { Button } from '../Button';
 import { Link } from 'react-router-dom';
+import { Button } from '../Button';
 
-export default class Navbar extends Component {
+export default class NavbarMenu extends Component {
   state = { clicked: false };
 
   handleClick = () => {
