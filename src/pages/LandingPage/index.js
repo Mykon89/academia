@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarMenu from '../../components/Navbar';
 
-const Home = () => {
+const LandingPage = () => {
   return (
     <div>
       <NavbarMenu />
@@ -9,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default LandingPage;
